@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: Avenir-Book;
+    src: local('Avenir-Book');
+    src:
+      url(/Avenir-Book.woff2) format('woff2'),
+      url(/Avenir-Book.woff) format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: fallback;
+  }
+
+  @font-face {
+    font-family: Avenir-Medium;
+    src: local('Avenir-Medium');
+    src:
+      url(/Avenir-Medium.woff2) format('woff2'),
+      url(/Avenir-Medium.woff) format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: fallback;
+  }
+
+  @font-face {
+    font-family: Avenir-Black;
+    src: local('Avenir-Black');
+    src:
+      url(/Avenir-Black.woff2) format('woff2'),
+      url(/Avenir-Black.woff) format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: fallback;
+  }
+
+  @media screen and (min-height: 960px) {
+    :root {
+      --theme-box-height-max: 960px;
+    }
+  }
+
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+  }
+
+  body {
+    background-color: rgb(var(--theme-color-doc-body));
+    color: rgb(var(--theme-color-text-primary));
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+  }
+}
+
+@layer components {
+  .grid-sienna {
+    display: grid;
+    gap: 0px 0px;
+    grid-template-areas:
+      'side-nav aside header'
+      'side-nav aside main'
+      'side-nav aside bottom-nav';
+    grid-template-columns: auto auto 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-auto-flow: row;
+    overflow: hidden;
+
+    @screen md {
+      grid-template-columns: auto clamp(20rem, 33.33333%, 25rem) 1fr;
+    }
+  }
+}

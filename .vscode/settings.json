@@ -1,0 +1,5 @@
+{
+  "cSpell.ignoreWords": ["athens", "clsx", "nextjs", "okta", "sigmail", "tailwindcss"],
+  "eslint.useFlatConfig": false,
+  "tailwindCSS.experimental.configFile": "config/tailwind/index.ts"
+}

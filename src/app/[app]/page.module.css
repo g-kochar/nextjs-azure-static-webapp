@@ -1,0 +1,9 @@
+.grid-sienna-chat {
+  @apply grid grid-flow-row gap-y-5 overflow-hidden;
+
+  grid-template-areas:
+    'main'
+    'form';
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto;
+}

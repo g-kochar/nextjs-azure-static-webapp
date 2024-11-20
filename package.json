@@ -3,26 +3,43 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "//start": "NODE_OPTIONS='--inspect' next dev",
+    "start": "next dev",
     "lint": "next lint"
   },
   "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
-    "next": "14.1.0"
+    "@emotion/cache": "11.13.1",
+    "@emotion/react": "11.13.3",
+    "@emotion/styled": "11.13.0",
+    "@mui/icons-material": "6.1.7",
+    "@mui/material": "6.1.7",
+    "@mui/material-nextjs": "6.1.7",
+    "@okta/okta-auth-js": "7.8.1",
+    "@okta/okta-react": "6.9.0",
+    "clsx": "2.1.1",
+    "lodash": "4.17.21",
+    "next": "15.0.3",
+    "next-auth": "5.0.0-beta.25",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
   },
   "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "autoprefixer": "^10.0.1",
-    "postcss": "^8",
-    "tailwindcss": "^3.3.0"
+    "@types/lodash": "4.17.13",
+    "@types/node": "22.9.0",
+    "@types/react": "18.3.12",
+    "@types/react-dom": "18.3.1",
+    "autoprefixer": "10.4.20",
+    "eslint": "9.14.0",
+    "eslint-config-next": "15.0.3",
+    "postcss": "8.4.48",
+    "postcss-nesting": "13.0.1",
+    "prettier": "3.3.3",
+    "prettier-plugin-tailwindcss": "0.6.8",
+    "tailwindcss": "3.4.14",
+    "typescript": "5.6.3"
   },
   "engines": {
-    "node": "18.17.1"
+    "node": "18.20.0"
   }
 }

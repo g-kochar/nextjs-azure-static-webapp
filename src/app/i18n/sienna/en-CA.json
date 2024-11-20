@@ -1,0 +1,12 @@
+{
+  "aiAssistFormActionLabel_submit": "Answer",
+  "aiAssistFormInputHint_query": "Ask a question",
+  "aiAssistFormInputLabel_query": "Question/inquiry",
+  "documentTitle_generic": "",
+  "documentTitle_login": "Sign in",
+  "heading1_homePage": "Sienna AI Virtual Assistant",
+  "heading1_loginPage": "Welcome",
+  "heading2_homePage": "How can I help you today?",
+  "heading2_loginPage": "Click the button below to sign in with your work account",
+  "signInFormActionLabel_submit": "Sign In"
+}
